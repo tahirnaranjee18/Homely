@@ -1,0 +1,227 @@
+﻿@model dynamic
+@{
+    Layout = "~/Views/Shared/_PropertyManagerLayout.cshtml";
+    ViewData["Title"] = "Payment Dashboard";
+
+    var overdueBills = ViewBag.OverdueBills as List<Homely_Web.Models.BillModel> ?? new List<Homely_Web.Models.BillModel>();
+    var pendingPayments = ViewBag.PendingPayments as List<Homely_Web.Models.PaymentModel> ?? new List<Homely_Web.Models.PaymentModel>();
+    var recentPayments = ViewBag.RecentPayments as List<Homely_Web.Models.PaymentModel> ?? new List<Homely_Web.Models.PaymentModel>();
+    var activeTenants = ViewBag.ActiveTenants as Dictionary<string, string> ?? new Dictionary<string, string>();
+}
+
+<div class="row mb-3">
+    <div class="col-md-8">
+        <form method="get" asp-action="Arrears">
+            <div class="input-group">
+                <input type="text" name="searchString" class="form-control" placeholder="Search by tenant name..." value="@ViewBag.CurrentSearch">
+                <button class="btn btn-secondary" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4 text-end">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#billTenantModal">
+            <i class="fas fa-file-invoice-dollar me-2"></i> Bill Tenant
+        </button>
+    </div>
+</div>
+
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card p-3 shadow-sm border-start border-danger border-4">
+            <h6 class="text-muted">Overdue Accounts</h6>
+            <h3 class="text-danger fw-bold">@ViewBag.OverdueCount</h3>
+            <small>Awaiting payment from tenants</small>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card p-3 shadow-sm border-start border-warning border-4">
+            <h6 class="text-muted">Pending Payments</h6>
+            <h3 class="text-warning fw-bold">@ViewBag.PendingCount</h3>
+            <small>Awaiting your approval</small>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4 flex-grow-1" style="min-height: 400px;">
+    <div class="col-md-6 d-flex flex-column">
+        <h5 class="fw-semibold mb-3">Overdue Bills</h5>
+        <div class="list-group flex-grow-1" style="overflow-y: auto;">
+            @if (overdueBills.Any())
+            {
+                @foreach (var bill in overdueBills)
+                {
+                    <div class="list-group-item list-group-item-action flex-column align-items-start p-3 mb-2 shadow-sm border-start border-danger border-4">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 fw-bold">@bill.TenantName</h6>
+                            <strong class="text-danger">R @bill.Amount</strong>
+                        </div>
+                        <p class="mb-1 text-muted">@bill.Description</p>
+                        <small class="text-muted">Due: @bill.DueDate.ToDateTime().ToString("dd MMM yyyy")</small>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="card p-4 text-center text-muted h-100 d-flex justify-content-center"><em>No overdue accounts.</em></div>
+            }
+        </div>
+    </div>
+
+    <div class="col-md-6 d-flex flex-column">
+        <h5 class="fw-semibold mb-3">Pending Approval</h5>
+        <div class="list-group flex-grow-1" style="overflow-y: auto;">
+            @if (pendingPayments.Any())
+            {
+                @foreach (var payment in pendingPayments)
+                {
+                    <div class="list-group-item list-group-item-action flex-column align-items-start p-3 mb-2 shadow-sm border-start border-warning border-4">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 fw-bold">@payment.TenantName</h6>
+                            <strong class="text-dark">@payment.Description</strong>
+                        </div>
+                        <p class="mb-1 text-muted">Submitted: @payment.Timestamp.ToDateTime().ToString("dd MMM yyyy")</p>
+
+                        <div class="mt-2 d-flex gap-2">
+                            <a href="@payment.ImageUrl" class="btn btn-sm btn-outline-secondary" target="_blank">
+                                <i class="fas fa-image me-1"></i> View Proof
+                            </a>
+                            <button class="btn btn-sm btn-success" onclick="approvePayment('@payment.Id', '@payment.BillId')">Approve</button>
+                            <button class="btn btn-sm btn-danger" onclick="rejectPayment('@payment.Id', '@payment.BillId')">Reject</button>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="card p-4 text-center text-muted h-100 d-flex justify-content-center"><em>No pending payments.</em></div>
+            }
+        </div>
+    </div>
+</div>
+
+<hr class="my-4" />
+<h5 class="fw-semibold mt-4">Recent Payment History (Last 20)</h5>
+
+@if (recentPayments.Any())
+{
+    <div class="list-group">
+        @foreach (var payment in recentPayments)
+        {
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h6 class="mb-1">@payment.TenantName</h6>
+                    <strong class="text-success">@payment.Description</strong>
+                </div>
+                <p class="mb-1 text-muted">Approved: @payment.Timestamp.ToDateTime().ToString("dd MMM yyyy")</p>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="text-muted text-center py-5"><em>No recent payment history.</em></div>
+}
+
+
+<div class="modal fade" id="billTenantModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Create New Bill</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form id="createBillForm">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label>Select Tenant</label>
+                        <select id="billTenantId" name="tenantId" class="form-select" required>
+                            <option value="">Select an active tenant...</option>
+                            @foreach (var tenant in activeTenants)
+                            {
+                                <option value="@tenant.Key">@tenant.Value</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label>Amount (R)</label>
+                        <input type="number" id="billAmount" name="amount" class="form-control" placeholder="e.g., 8000" required />
+                    </div>
+                    <div class="mb-3">
+                        <label>Description</label>
+                        <input type="text" id="billDescription" name="description" class="form-control" placeholder="e.g., Rent for December" required />
+                    </div>
+                    <div class="mb-3">
+                        <label>Due Date</label>
+                        <input type="date" id="billDueDate" name="dueDate" class="form-control" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send Bill</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+
+        async function approvePayment(paymentId, billId) {
+            if (!confirm("Are you sure you want to approve this payment and mark it as PAID?")) return;
+
+            const response = await fetch(`/PropertyManager/ApprovePayment?paymentId=${paymentId}&billId=${billId}`, { method: "POST" });
+            const result = await response.json();
+
+            alert(result.message);
+            if (result.success) location.reload();
+        }
+
+        async function rejectPayment(paymentId, billId) {
+            if (!confirm("Are you sure you want to reject this payment and mark it as UNPAID?")) return;
+
+            const response = await fetch(`/PropertyManager/RejectPayment?paymentId=${paymentId}&billId=${billId}`, { method: "POST" });
+            const result = await response.json();
+
+            alert(result.message);
+            if (result.success) location.reload();
+        }
+
+
+        document.getElementById("createBillForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const tenantId = document.getElementById("billTenantId").value;
+            const amount = document.getElementById("billAmount").value;
+            const description = document.getElementById("billDescription").value;
+            const dueDate = document.getElementById("billDueDate").value;
+
+            if (!tenantId || !amount || !description || !dueDate) {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("tenantId", tenantId);
+            formData.append("amount", amount);
+            formData.append("description", description);
+            formData.append("dueDate", dueDate);
+
+            const response = await fetch("/PropertyManager/CreateBill", {
+                method: "POST",
+                body: formData
+            });
+
+            const result = await response.json();
+            alert(result.message);
+
+            if (result.success) {
+                // Close the modal
+                var modal = bootstrap.Modal.getInstance(document.getElementById('billTenantModal'));
+                modal.hide();
+                location.reload();
+            }
+        });
+    </script>
+}

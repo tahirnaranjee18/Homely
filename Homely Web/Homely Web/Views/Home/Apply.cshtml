@@ -1,0 +1,53 @@
+﻿@model Homely_Web.Models.TenantApplicationModel
+@{
+    ViewData["Title"] = "Apply for Property";
+    Layout = "~/Views/Shared/_LayoutGuest.cshtml";
+    var property = ViewBag.Property as Homely_Web.Models.PropertyModel;
+}
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body p-5">
+                    <h2 class="fw-bold text-center">Apply for Property</h2>
+                    <p class="text-muted">You are applying for: <strong>@property.Title</strong></p>
+                    <hr />
+
+                    <form asp-action="Apply" method="post" enctype="multipart/form-data">
+                        <input asp-for="PropertyId" type="hidden" />
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input asp-for="ApplicantName" class="form-control" placeholder="Enter your full name" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input asp-for="ApplicantEmail" type="email" class="form-control" placeholder="Enter your email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input asp-for="ApplicantPhone" type="tel" class="form-control" placeholder="Enter your phone number" required />
+                        </div>
+
+                        <hr class="my-4" />
+
+                        <div class="mb-3">
+                            <label class="form-label">ID Document (PDF or Image)</label>
+                            <input type="file" name="idFile" class="form-control" accept="image/*,application/pdf" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Latest Payslip (PDF or Image)</label>
+                            <input type="file" name="payslipFile" class="form-control" accept="image/*,application/pdf" required />
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-brown btn-lg w-100 mt-3">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

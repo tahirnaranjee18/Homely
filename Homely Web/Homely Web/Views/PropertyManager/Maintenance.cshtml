@@ -1,0 +1,176 @@
+﻿@using Homely_Web.Models
+@{
+    Layout = "~/Views/Shared/_PropertyManagerLayout.cshtml";
+    ViewData["Title"] = "Maintenance Board";
+
+    var openTasks = ViewBag.OpenTasks as List<ReportModel> ?? new List<ReportModel>();
+    var inProgressTasks = ViewBag.InProgress as List<ReportModel> ?? new List<ReportModel>();
+    var completedTasks = ViewBag.Completed as List<ReportModel> ?? new List<ReportModel>();
+    var caretakers = ViewBag.Caretakers as List<UserModel> ?? new List<UserModel>();
+}
+
+<form method="get" asp-action="Maintenance" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="searchString" class="form-control" placeholder="Search by title or address..." value="@ViewBag.CurrentSearch">
+        <button class="btn btn-secondary" type="submit">Search</button>
+    </div>
+</form>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card p-3 shadow-sm border-start border-warning border-4 mb-3">
+            <h6 class="text-muted">Open Tasks</h6>
+            <h3 class="text-warning fw-bold">@openTasks.Count</h3>
+            <small>Awaiting assignment</small>
+        </div>
+
+        @if (openTasks.Any())
+        {
+            @foreach (var task in openTasks)
+            {
+                <div class="card p-3 mb-3 shadow-sm card-status-pending">
+                    <h6>@task.Title</h6>
+                    <p class="text-muted mb-1">@task.PropertyAddress</p>
+                    <small class="text-secondary">Created: @task.FormattedTimestamp</small>
+                    <div class="mt-2">
+                        <button class="btn btn-outline-primary btn-sm" onclick="assignCaretaker('@task.Id')">
+                            Assign Caretaker
+                        </button>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-muted"><em>No open tasks found.</em></p>
+        }
+    </div>
+
+    <div class="col-md-4">
+        <div class="card p-3 shadow-sm border-start border-info border-4 mb-3">
+            <h6 class="text-muted">In Progress</h6>
+            <h3 class="text-info fw-bold">@inProgressTasks.Count</h3>
+            <small>Currently assigned</small>
+        </div>
+
+        @if (inProgressTasks.Any())
+        {
+            @foreach (var task in inProgressTasks)
+            {
+                <div class="card p-3 mb-3 shadow-sm card-status-progress">
+                    <h6>@task.Title</h6>
+                    <p>@task.PropertyAddress</p>
+                    <small class="text-secondary">Assigned to: @task.AssignedCaretakerName</small><br />
+                    <small class="text-secondary">Created: @task.FormattedTimestamp</small>
+                    <div class="mt-2">
+                        <button class="btn btn-outline-success btn-sm" onclick="updateStatus('@task.Id', 'RESOLVED')">
+                            Mark Resolved
+                        </button>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-muted"><em>No tasks in progress.</em></p>
+        }
+    </div>
+
+    <div class="col-md-4">
+        <div class="card p-3 shadow-sm border-start border-success border-4 mb-3">
+            <h6 class="text-muted">Completed</h6>
+            <h3 class="text-success fw-bold">@completedTasks.Count</h3>
+            <small>Resolved tasks</small>
+        </div>
+
+        @if (completedTasks.Any())
+        {
+            @foreach (var task in completedTasks)
+            {
+                <div class="card p-3 mb-3 shadow-sm card-status-resolved">
+                    <h6>@task.Title</h6>
+                    <p>@task.PropertyAddress</p>
+                    <small class="text-muted">✔ Resolved on: @task.FormattedTimestamp</small>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-muted"><em>No completed tasks.</em></p>
+        }
+    </div>
+</div>
+
+<div class="modal fade" id="assignCaretakerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Assign Caretaker</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="assignCaretakerForm">
+                    <input type="hidden" id="assignReportId" name="id" />
+                    <div class="mb-3">
+                        <label>Select Caretaker</label>
+                        <select name="caretakerId" class="form-select" required>
+                            <option value="">Select...</option>
+                            @foreach (var c in caretakers)
+                            {
+                                <option value="@c.Uid">@c.FullName</option>
+                            }
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="saveAssignmentBtn" class="btn btn-primary w-100">Assign Task</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var assignModal = new bootstrap.Modal(document.getElementById('assignCaretakerModal'));
+
+        function assignCaretaker(reportId) {
+            document.getElementById("assignReportId").value = reportId;
+            assignModal.show();
+        }
+
+        document.getElementById("saveAssignmentBtn").addEventListener("click", async function () {
+            const form = document.getElementById("assignCaretakerForm");
+            const formData = new FormData(form);
+            const response = await fetch("/PropertyManager/AssignCaretaker", {
+                method: "POST",
+                body: formData
+            });
+
+            if (!response.ok) {
+                alert("Error: Could not connect."); return;
+            }
+            const result = await response.json();
+            alert(result.message);
+            if (result.success) location.reload();
+        });
+
+        async function updateStatus(reportId, newStatus) {
+            const formData = new FormData();
+            formData.append("id", reportId);
+            formData.append("status", newStatus);
+
+            const response = await fetch("/PropertyManager/UpdateStatus", {
+                method: "POST",
+                body: formData
+            });
+
+            if (!response.ok) {
+                alert("Error: Could not connect."); return;
+            }
+            const result = await response.json();
+            alert(result.message);
+            if (result.success) location.reload();
+        }
+    </script>
+}

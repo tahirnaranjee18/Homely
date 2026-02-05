@@ -1,0 +1,101 @@
+﻿@model List<Homely_Web.Models.PropertyModel>
+@{
+    ViewData["Title"] = "Available Properties";
+    Layout = "~/Views/Shared/_LayoutGuest.cshtml";
+
+    var search = ViewBag.CurrentSearch ?? "";
+    var beds = (int)(ViewBag.CurrentBedrooms ?? 0);
+    var baths = (int)(ViewBag.CurrentBathrooms ?? 0);
+    var garages = (int)(ViewBag.CurrentGarages ?? 0);
+    var price = ViewBag.CurrentPriceRange ?? "All";
+}
+
+<div class="container-fluid filter-layout my-4">
+
+    <div class="filter-sidebar">
+        <div class="card p-4 shadow-sm">
+            <form asp-action="Index" method="get">
+                <h5 class="fw-bold mb-3">Filter</h5>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Search</label>
+                    <input type="text" name="searchString" class="form-control" placeholder="Title or Location..." value="@search">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Bedrooms</label>
+                    <select name="bedrooms" class="form-select">
+                        <option value="0" selected="@(beds == 0)">Any</option>
+                        <option value="1" selected="@(beds == 1)">1 Bed</option>
+                        <option value="2" selected="@(beds == 2)">2 Beds</option>
+                        <option value="3" selected="@(beds == 3)">3 Beds</option>
+                        <option value="4" selected="@(beds == 4)">4+ Beds</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Bathrooms</label>
+                    <select name="bathrooms" class="form-select">
+                        <option value="0" selected="@(baths == 0)">Any</option>
+                        <option value="1" selected="@(baths == 1)">1 Bath</option>
+                        <option value="2" selected="@(baths == 2)">2 Baths</option>
+                        <option value="3" selected="@(baths == 3)">3+ Baths</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Garages</label>
+                    <select name="garages" class="form-select">
+                        <option value="0" selected="@(garages == 0)">Any</option>
+                        <option value="1" selected="@(garages == 1)">1 Garage</option>
+                        <option value="2" selected="@(garages == 2)">2+ Garages</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Price Range</label>
+                    <select name="priceRange" class="form-select">
+                        <option value="All" selected="@(price == "All")">Any Price</option>
+                        <option value="under10k" selected="@(price == "under10k")">Under R10,000</option>
+                        <option value="10k-15k" selected="@(price == "10k-15k")">R10,000 - R15,000</option>
+                        <option value="15k-20k" selected="@(price == "15k-20k")">R15,001 - R20,000</option>
+                        <option value="over20k" selected="@(price == "over20k")">Over R20,000</option>
+                    </select>
+                </div>
+                <div class="d-grid mt-4">
+                    <button class="btn btn-outline-brown" type="submit"><i class="fas fa-search me-2"></i>Apply Filters</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="property-content">
+
+        <h1 class="mb-4 fw-bold">Featured Properties</h1>
+
+        @if (!Model.Any())
+        {
+            <div class="alert alert-info">
+                No properties found matching your criteria. Please try different filters.
+            </div>
+        }
+
+        <div class="row">
+            @foreach (var property in Model)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a asp-action="Details" asp-controller="Home" asp-route-id="@property.Id" class="text-decoration-none text-dark">
+                        <div class="card h-100 card-hover">
+                            <img src="@property.DisplayImage" class="card-img-top" alt="@property.Title" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">@property.Title</h5>
+                                <p class="card-text text-muted">@property.Location</p>
+                                <h6 class="card-subtitle mb-2" style="color: #7B4F28;">R @property.Price / month</h6>
+                            </div>
+                            <div class="card-footer bg-white border-0 p-3 text-center">
+                                <small class="text-muted" style="font-weight: 600;">Click to view details</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,141 @@
+﻿@model dynamic
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Reports & Analytics";
+    // Get the chart data, defaulting to an empty list if null
+    var chartData = ViewBag.ChartData as List<Homely_Web.Controllers.ChartData> ?? new List<Homely_Web.Controllers.ChartData>();
+}
+
+<div class="card p-4 shadow-sm">
+    <form method="post" asp-action="Reports" class="row g-3 align-items-end mb-3">
+        <div class="col-md-3">
+            <label class="form-label">Date Range</label>
+            <select name="dateRange" class="form-select">
+                <option>All Time</option>
+                <option>Today</option>
+                <option>This Week</option>
+                <option>This Month</option>
+                <option>Last 7 Days</option>
+                <option>Last 30 Days</option>
+                <option>This Year</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label">Report Type</label>
+            <select name="reportType" class="form-select">
+                <option>Financial Summary</option>
+                <option>User Activity</option>
+                <option>Maintenance Requests</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-outline-brown mt-4">Generate Report</button>
+        </div>
+
+        <div class="col-md-3 text-end">
+            <a href="/Admin/ExportPDF" class="btn btn-outline-secondary mt-4 @(ViewBag.ReportGenerated ? "" : "disabled")">Export PDF</a>
+            <a href="/Admin/ExportExcel" class="btn btn-outline-secondary mt-4 @(ViewBag.ReportGenerated ? "" : "disabled")">Export Excel</a>
+        </div>
+    </form>
+
+    <hr />
+
+    @if (ViewBag.ReportGenerated == true)
+    {
+        <h5 class="text-muted mb-3">
+            Generated: @ViewBag.ReportType — @ViewBag.SelectedRange
+        </h5>
+
+        @if (chartData.Any())
+        {
+            <canvas id="reportChart" height="100"></canvas>
+        }
+        else
+        {
+            <div class="text-center py-5 text-muted">
+                <em>No data found for this report.</em>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="text-center py-5 text-muted">
+            <em>Select filters and click “Generate Report” to view analytics.</em>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const chartData = @Html.Raw(Json.Serialize(chartData));
+        const reportType = "@ViewBag.ReportType";
+
+        if (chartData && chartData.length > 0) {
+            let chartType = "bar"; // default
+
+            switch (reportType) {
+                case "Financial Summary":
+                    chartType = "bar";
+                    break;
+                case "User Activity":
+                    chartType = "pie";
+                    break;
+                case "Maintenance Requests":
+                    chartType = "doughnut";
+                    break;
+            }
+
+            const ctx = document.getElementById('reportChart').getContext('2d');
+
+            const labels = chartData.map(x => x.label);
+            const values = chartData.map(x => x.value);
+
+            new Chart(ctx, {
+                type: chartType,
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: reportType + " Data",
+                        data: values,
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.6)',
+                            'rgba(255, 99, 132, 0.6)',
+                            'rgba(255, 206, 86, 0.6)',
+                            'rgba(75, 192, 192, 0.6)',
+                            'rgba(153, 102, 255, 0.6)',
+                            'rgba(255, 159, 64, 0.6)',
+                            'rgba(199, 199, 199, 0.6)'
+                        ],
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1,
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: true, position: 'top' },
+                        title: { display: true, text: reportType + ' - ' + '@ViewBag.SelectedRange' }
+                    },
+                    scales: (chartType === "pie" || chartType === "doughnut") ? {} : {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value, index, values) {
+                                    if (reportType === 'Financial Summary') {
+                                        return 'R ' + value;
+                                    }
+                                    return value;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 1,
+    "TaskName": "Plumbing Emergency",
+    "PropertyAddress": "123 Main Street, Unit 2B",
+    "AssignedCaretaker": "",
+    "Priority": "High",
+    "Status": "Open",
+    "CreatedOn": "2025-11-10T00:00:00"
+  },
+  {
+    "Id": 2,
+    "TaskName": "Air Conditioner Repair",
+    "PropertyAddress": "45 Rosewood Ave",
+    "AssignedCaretaker": "Caretaker Thabo",
+    "Priority": "Medium",
+    "Status": "InProgress",
+    "CreatedOn": "2025-11-09T00:00:00"
+  },
+  {
+    "Id": 3,
+    "TaskName": "Garden Fence Fix",
+    "PropertyAddress": "10 Willow Crescent",
+    "AssignedCaretaker": "Caretaker Naledi",
+    "Priority": "Low",
+    "Status": "Completed",
+    "CreatedOn": "2025-11-01T00:00:00"
+  }
+]

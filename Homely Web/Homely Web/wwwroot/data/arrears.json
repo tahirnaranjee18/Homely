@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 1,
+    "Tenant": "Robert Chen",
+    "Address": "789 Pine Road, Cape Town",
+    "DaysOverdue": 45,
+    "Amount": 2100,
+    "HasPaymentPlan": false,
+    "NoticeSent": true
+  },
+  {
+    "Id": 2,
+    "Tenant": "Thandi Mokoena",
+    "Address": "12 Palm Street, Durban",
+    "DaysOverdue": 15,
+    "Amount": 1250,
+    "HasPaymentPlan": true,
+    "NoticeSent": false
+  },
+  {
+    "Id": 3,
+    "Tenant": "Sipho Nkosi",
+    "Address": "22 Rose Avenue, Johannesburg",
+    "DaysOverdue": 5,
+    "Amount": 900,
+    "HasPaymentPlan": false,
+    "NoticeSent": false
+  }
+]

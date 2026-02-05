@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Application Submitted";
+    Layout = "~/Views/Shared/_LayoutGuest.cshtml";
+}
+
+<div class="container my-5 text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card p-5 shadow-sm">
+                <i class="fas fa-check-circle fa-4x text-success mb-3"></i>
+                <h1 class="fw-bold">Thank You!</h1>
+                <p class="fs-5 text-muted">Your application has been submitted successfully.</p>
+                <p>The property manager will contact you at the email address you provided if your application is successful.</p>
+                <div class="mt-4">
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Back to Property Listings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

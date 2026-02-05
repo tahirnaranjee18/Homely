@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 1,
+    "ApplicantName": "Emily Johnson",
+    "PropertyAddress": "456 Oak Avenue",
+    "SubmittedOn": "2024-11-10T00:00:00",
+    "Score": 85,
+    "Status": "Approved",
+    "Documents": [
+      "ID.pdf",
+      "IncomeProof.pdf"
+    ]
+  },
+  {
+    "Id": 2,
+    "ApplicantName": "Michael Chen",
+    "PropertyAddress": "123 Main Street",
+    "SubmittedOn": "2024-11-07T00:00:00",
+    "Score": 92,
+    "Status": "Approved",
+    "Documents": [
+      "ID.pdf"
+    ]
+  },
+  {
+    "Id": 3,
+    "ApplicantName": "Sarah Johnson",
+    "PropertyAddress": "22 Willow Road",
+    "SubmittedOn": "2024-11-05T00:00:00",
+    "Score": 70,
+    "Status": "Rejected",
+    "Documents": [
+      "ID.pdf",
+      "CreditReport.pdf"
+    ]
+  },
+  {
+    "Id": 4,
+    "ApplicantName": "Emily Johnson",
+    "PropertyAddress": "456 Oak Avenue, Cape Town",
+    "SubmittedOn": "2025-11-10T00:00:00",
+    "Score": 85,
+    "Status": "Pending",
+    "Documents": [
+      "ID_Document.pdf",
+      "Proof_of_Income.pdf"
+    ]
+  },
+  {
+    "Id": 5,
+    "ApplicantName": "David Mokoena",
+    "PropertyAddress": "12 Greenfields Estate, Durban",
+    "SubmittedOn": "2025-11-09T00:00:00",
+    "Score": 78,
+    "Status": "Pending",
+    "Documents": [
+      "RSA_ID.pdf",
+      "Salary_Slip_Oct2025.pdf",
+      "Employment_Letter.pdf"
+    ]
+  },
+  {
+    "Id": 6,
+    "ApplicantName": "Aisha Naidoo",
+    "PropertyAddress": "7 Sunset Villas, Johannesburg",
+    "SubmittedOn": "2025-11-08T00:00:00",
+    "Score": 91,
+    "Status": "Pending",
+    "Documents": [
+      "ID_Verification.pdf",
+      "Bank_Statement.pdf"
+    ]
+  }
+]

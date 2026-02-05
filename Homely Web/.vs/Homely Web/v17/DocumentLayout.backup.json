@@ -1,0 +1,789 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tahir\\Documents\\Homely Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\controllers\\propertymanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\controllers\\propertymanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\propertymanager\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\propertymanager\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\propertymanager\\propertydetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\propertymanager\\propertydetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\propertymanager\\properties.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\propertymanager\\properties.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\propertymanager\\maintenance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\propertymanager\\maintenance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\propertymanager\\leases.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\propertymanager\\leases.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\propertymanager\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\propertymanager\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\propertymanager\\arrears.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\propertymanager\\arrears.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\propertymanager\\applications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\propertymanager\\applications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\admin\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\admin\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\shared\\_propertymanagerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\shared\\_propertymanagerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\firebase-key.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\firebase-key.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\shared\\_layoutguest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\shared\\_layoutguest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\admin\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\admin\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\admin\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\admin\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\tenantmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\tenantmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\tenantapplicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\tenantapplicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\settingsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\settingsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\reportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\reportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\reportcommentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\reportcommentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\propertymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\propertymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\maintenancemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\maintenancemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\leasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\leasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\firebaseauthresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\firebaseauthresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\billmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\billmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\arrearmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\arrearmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\models\\adminmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\models\\adminmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\home\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\home\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\home\\apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\home\\apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\admin\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\admin\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\admin\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\admin\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\views\\admin\\activitylog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\views\\admin\\activitylog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|c:\\users\\tahir\\documents\\homely web\\homely web\\wwwroot\\images\\property1.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{1661D291-5B02-450A-A873-BA083F07690E}|Homely Web\\Homely Web.csproj|solutionrelative:homely web\\wwwroot\\images\\property1.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Applications.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Applications.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\PropertyManager\\Applications.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Applications.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\PropertyManager\\Applications.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:57:09.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Reports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Reports.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Admin\\Reports.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Reports.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Admin\\Reports.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAH4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:51:35.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T17:40:22.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Settings.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\PropertyManager\\Settings.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Settings.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\PropertyManager\\Settings.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:58:51.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PropertyDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\PropertyDetails.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\PropertyManager\\PropertyDetails.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\PropertyDetails.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\PropertyManager\\PropertyDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:58:25.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Properties.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Properties.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\PropertyManager\\Properties.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Properties.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\PropertyManager\\Properties.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:58:12.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Maintenance.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Maintenance.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\PropertyManager\\Maintenance.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Maintenance.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\PropertyManager\\Maintenance.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:58:02.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Homely Web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Homely Web\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAAANsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-14T08:51:37.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Arrears.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Arrears.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\PropertyManager\\Arrears.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Arrears.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\PropertyManager\\Arrears.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:57:32.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PropertyManagerController.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Controllers\\PropertyManagerController.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Controllers\\PropertyManagerController.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Controllers\\PropertyManagerController.cs",
+              "RelativeToolTip": "Homely Web\\Controllers\\PropertyManagerController.cs",
+              "ViewState": "AgIAALcBAAAAAAAAAAAAAMoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T21:48:05.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\PropertyManager\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Dashboard.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\PropertyManager\\Dashboard.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:57:43.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Leases.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Leases.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\PropertyManager\\Leases.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\PropertyManager\\Leases.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\PropertyManager\\Leases.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:57:51.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_PropertyManagerLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Shared\\_PropertyManagerLayout.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Shared\\_PropertyManagerLayout.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Shared\\_PropertyManagerLayout.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Shared\\_PropertyManagerLayout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T08:54:37.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T08:54:22.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Program.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Program.cs",
+              "RelativeToolTip": "Homely Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T10:25:01.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "firebase-key.json",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\firebase-key.json",
+              "RelativeDocumentMoniker": "Homely Web\\firebase-key.json",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\firebase-key.json",
+              "RelativeToolTip": "Homely Web\\firebase-key.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-16T16:05:59.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Homely Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\appsettings.json",
+              "RelativeToolTip": "Homely Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-16T10:25:45.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_LayoutGuest.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Shared\\_LayoutGuest.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Shared\\_LayoutGuest.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Shared\\_LayoutGuest.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Shared\\_LayoutGuest.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T08:55:22.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T09:20:23.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:51:05.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserManagement.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\UserManagement.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Admin\\UserManagement.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\UserManagement.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Admin\\UserManagement.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:51:45.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Login.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Admin\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Login.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Admin\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:51:13.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Admin\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Admin\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:51:08.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T22:04:41.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\UserAccount.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\UserAccount.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\UserAccount.cs",
+              "RelativeToolTip": "Homely Web\\Models\\UserAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:40:43.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\UserModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:40:44.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TenantModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\TenantModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\TenantModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\TenantModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\TenantModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:40:41.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TenantApplicationModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\TenantApplicationModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\TenantApplicationModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\TenantApplicationModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\TenantApplicationModel.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwAEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:40:39.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SettingsModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\SettingsModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\SettingsModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\SettingsModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\SettingsModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:40:37.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ReportModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\ReportModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\ReportModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\ReportModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\ReportModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:40:10.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ReportCommentModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\ReportCommentModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\ReportCommentModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\ReportCommentModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\ReportCommentModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:39:34.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PropertyModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\PropertyModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\PropertyModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\PropertyModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\PropertyModel.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:39:30.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PaymentModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\PaymentModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\PaymentModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\PaymentModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\PaymentModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:39:28.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MaintenanceModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\MaintenanceModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\MaintenanceModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\MaintenanceModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\MaintenanceModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:39:27.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LeaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\LeaseModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\LeaseModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\LeaseModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\LeaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:39:07.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "FirebaseAuthResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\FirebaseAuthResponse.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\FirebaseAuthResponse.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\FirebaseAuthResponse.cs",
+              "RelativeToolTip": "Homely Web\\Models\\FirebaseAuthResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T18:03:14.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "BillModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\BillModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\BillModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\BillModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\BillModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:04:05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ArrearModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\ArrearModel.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\ArrearModel.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\ArrearModel.cs",
+              "RelativeToolTip": "Homely Web\\Models\\ArrearModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:39:03.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AdminModels.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\AdminModels.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Models\\AdminModels.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Models\\AdminModels.cs",
+              "RelativeToolTip": "Homely Web\\Models\\AdminModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T20:39:02.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Homely Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAADwvwQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T08:02:00.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Homely Web\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Homely Web\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAOIBAAAAAAAAAAAUwO4BAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T21:52:22.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwCYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T08:02:23.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Home\\Confirmation.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Confirmation.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Home\\Confirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T08:03:41.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Apply.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Apply.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Home\\Apply.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Home\\Apply.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Home\\Apply.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T08:03:11.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Settings.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Admin\\Settings.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Settings.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Admin\\Settings.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:51:43.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Register.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Admin\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\Register.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Admin\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:51:33.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ActivityLog.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\ActivityLog.cshtml",
+              "RelativeDocumentMoniker": "Homely Web\\Views\\Admin\\ActivityLog.cshtml",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\Views\\Admin\\ActivityLog.cshtml",
+              "RelativeToolTip": "Homely Web\\Views\\Admin\\ActivityLog.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-12T21:50:52.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "property1.jpg",
+              "DocumentMoniker": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\wwwroot\\images\\property1.jpg",
+              "RelativeDocumentMoniker": "Homely Web\\wwwroot\\images\\property1.jpg",
+              "ToolTip": "C:\\Users\\Tahir\\Documents\\Homely Web\\Homely Web\\wwwroot\\images\\property1.jpg",
+              "RelativeToolTip": "Homely Web\\wwwroot\\images\\property1.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-11-15T16:35:23.166Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

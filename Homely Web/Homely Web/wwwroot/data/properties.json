@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "Palm Street Apartments",
+    "Type": "Apartment",
+    "Status": "Occupied",
+    "Price": 8500,
+    "Image": "/images/property1.jpg"
+  },
+  {
+    "Id": 2,
+    "Name": "Cedar Grove Villas",
+    "Type": "House",
+    "Status": "Available",
+    "Price": 12000,
+    "Image": "/images/default-property.jpg"
+  },
+  {
+    "Id": 4,
+    "Name": "sesame street drive",
+    "Type": "Apartment",
+    "Status": "Available",
+    "Price": 6000,
+    "Image": "/images/property-placeholder.jpg"
+  }
+]

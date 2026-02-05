@@ -1,0 +1,12 @@
+[
+  {
+    "Id": 1,
+    "PropertyAddress": "45 Willow Street, Cape Town",
+    "TenantName": "Sarah Johnson",
+    "StartDate": "2024-02-01T00:00:00",
+    "EndDate": "2026-02-01T00:00:00",
+    "RentAmount": 8500,
+    "PdfPath": "/leases/sample.pdf",
+    "Status": "Active"
+  }
+]

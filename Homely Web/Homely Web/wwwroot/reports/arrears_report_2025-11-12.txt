@@ -1,0 +1,22 @@
+🏠 ARREARS REPORT
+Generated on: 2025/11/12 18:46:11
+
+Total Overdue Accounts: 3
+Total Amount Due: R4250
+
+DETAILED LIST:
+- Robert Chen (789 Pine Road, Cape Town)
+  Overdue: 45 days | Amount: R2100
+  Payment Plan: None
+  Notice Sent: No
+
+- Thandi Mokoena (12 Palm Street, Durban)
+  Overdue: 15 days | Amount: R1250
+  Payment Plan: Active
+  Notice Sent: No
+
+- Sipho Nkosi (22 Rose Avenue, Johannesburg)
+  Overdue: 5 days | Amount: R900
+  Payment Plan: None
+  Notice Sent: No
+

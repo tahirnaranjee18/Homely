@@ -1,0 +1,71 @@
+﻿@model dynamic
+@{
+    Layout = "~/Views/Shared/_PropertyManagerLayout.cshtml";
+    ViewData["Title"] = "Manager Dashboard";
+    var properties = ViewBag.Properties as List<Homely_Web.Models.PropertyModel> ?? new List<Homely_Web.Models.PropertyModel>();
+}
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card p-3 shadow-sm border-start border-success border-4">
+            <h6>Total Properties</h6>
+            <h3>@ViewBag.TotalProperties</h3>
+            <small class="text-muted">Managed by you</small>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card p-3 shadow-sm border-start border-warning border-4">
+            <h6>Pending Maintenance</h6>
+            <h3>@ViewBag.MaintenanceRequests</h3>
+            <small class="text-warning">Awaiting action</small>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card p-3 shadow-sm border-start border-danger border-4">
+            <h6>Leases Expiring (60 days)</h6>
+            <h3>@ViewBag.ExpiringLeases</h3>
+            <small class="text-danger">Action required</small>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card p-3 shadow-sm border-start border-primary border-4">
+            <h6>Occupancy Rate</h6>
+            <h3>@ViewBag.OccupancyRate%</h3>
+            <small class="text-muted">Across all properties</small>
+        </div>
+    </div>
+</div>
+
+<div class="card p-4 shadow-sm">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5>Property Portfolio Overview</h5>
+        <a href="/PropertyManager/Properties" class="btn btn-primary btn-sm">View Full Portfolio</a>
+    </div>
+
+    <div class="row">
+        @if (properties.Any())
+        {
+            @foreach (var p in properties)
+            {
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="@p.DisplayImage" class="card-img-top" style="height: 160px; object-fit: cover;" alt="@p.Title" />
+                        <div class="card-body">
+                            <h6 class="card-title">@p.Title</h6>
+                            <span class="badge @(p.IsRented ? "bg-success" : "bg-info")">
+                                @(p.IsRented ? "Occupied" : "Available")
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-muted">You have not added any properties yet.</p>
+        }
+    </div>
+</div>

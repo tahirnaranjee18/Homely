@@ -1,0 +1,43 @@
+﻿@model Homely_Web.Models.AdminRegister
+@{
+    ViewData["Title"] = "Admin Register";
+    Layout = "~/Views/Shared/_LayoutGuest.cshtml";
+}
+
+<div class="container center-on-page">
+    <div class="col-md-5" style="width: 400px;">
+        <div class="card shadow-sm p-4">
+            <h3 class="text-center fw-bold">Create Account</h3>
+            <p class="text-center text-muted mb-4">Create a New Admin/Manager Account</p>
+
+            <form asp-action="Register" method="post">
+                <div class="mb-3">
+                    <label class="fw-semibold">Full Name</label>
+                    <input asp-for="FullName" class="form-control" placeholder="Enter your full name" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-semibold">Email</label>
+                    <input asp-for="Email" class="form-control" type="email" placeholder="Enter your email address" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class_class="fw-semibold">Password</label>
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-semibold">Confirm Password</label>
+                    <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Confirm your password" required />
+                </div>
+
+                <button type="submit" class="btn btn-outline-brown w-100">Register</button>
+
+                <div class="text-center mt-3">
+                    <p class="text-muted mb-1">Already have an account?</p>
+                    <a asp-action="Login" class="text-primary text-decoration-none">Login here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\appsettings.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\firebase-key.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Homely Web.staticwebassets.runtime.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Homely Web.staticwebassets.endpoints.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Homely Web.exe
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Homely Web.deps.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Homely Web.runtimeconfig.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Homely Web.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Homely Web.pdb
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\FirebaseAdmin.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Api.CommonProtos.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Api.Gax.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Api.Gax.Grpc.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Api.Gax.Rest.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Apis.Storage.v1.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Cloud.Firestore.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Cloud.Firestore.V1.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Cloud.Location.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Cloud.Storage.V1.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.LongRunning.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Grpc.Auth.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.barcodes.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.forms.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.io.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.kernel.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.layout.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.pdfa.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.pdfua.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.sign.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.styledxmlparser.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.svg.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\itext.commons.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\RBush.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\System.Linq.Async.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\System.Management.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.csproj.AssemblyReference.cache
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.AssemblyInfoInputs.cache
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.AssemblyInfo.cs
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.csproj.CoreCompileInputs.cache
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.RazorAssemblyInfo.cache
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.RazorAssemblyInfo.cs
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\scopedcss\bundle\Homely Web.styles.css
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.csproj.Up2Date
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\refint\Homely Web.dll
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.pdb
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\Homely Web.genruntimeconfig.cache
+C:\Users\Tahir\Documents\Homely Web\Homely Web\obj\Debug\net8.0\ref\Homely Web.dll

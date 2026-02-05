@@ -1,0 +1,172 @@
+﻿@model List<Homely_Web.Models.PropertyModel>
+
+@{
+    Layout = "~/Views/Shared/_PropertyManagerLayout.cshtml";
+    ViewData["Title"] = "Property Listings";
+}
+
+<div class="card p-4 shadow-sm mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="mb-0">Manage Properties</h5>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPropertyModal">
+            <i class="fas fa-plus me-2"></i>Add New Property
+        </button>
+    </div>
+
+    <form method="get" asp-action="Properties" class="row g-3 align-items-end">
+        <div class="col-md-5">
+            <label class="form-label">Search by Title</label>
+            <input type="text" name="searchString" class="form-control" placeholder="Search..." value="@ViewBag.CurrentSearch" />
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Status</label>
+            <select name="status" class="form-select">
+                <option value="All">All</option>
+                <option value="Occupied">Occupied</option>
+                <option value="Available">Available</option>
+            </select>
+        </div>
+        <div class="col-md-3 d-grid">
+            <button type="submit" class="btn btn-outline-brown mt-auto">Apply Filters</button>
+        </div>
+    </form>
+</div>
+
+<div class="row">
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var property in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <a href="/PropertyManager/PropertyDetails/@property.Id" class="text-decoration-none text-dark">
+                    <div class="card shadow-sm hover-shadow h-100">
+                        <img src="@property.DisplayImage" class="card-img-top" alt="@property.Title" style="height:200px;object-fit:cover;" />
+                        <div class="card-body">
+                            <h5 class="card-title">@property.Title</h5>
+                            <p class="card-text mb-2">
+                                <i class="fas fa-map-marker-alt me-1 text-muted"></i> @property.Location <br />
+                                <strong>Status:</strong> @(property.IsRented ? "Occupied" : "Available") <br />
+                                <strong>Price:</strong> R @property.Price
+                            </p>
+                            <small class="text-muted">Click to view details</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="text-center text-muted py-5">
+            <em>No properties match your filters.</em>
+        </div>
+    }
+</div>
+
+<div class="modal fade" id="addPropertyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add New Property</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addPropertyForm" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label>Property Title</label>
+                        <input type="text" name="title" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label>Location (Address)</label>
+                        <input type="text" name="location" class="form-control" required />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Price (R)</label>
+                            <input type="text" name="price" class="form-control" placeholder="e.g., 8000" required />
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Lease Duration (Months)</label>
+                            <input type="text" name="leaseDuration" class="form-control" placeholder="e.g., 12" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label>Bedrooms</label>
+                            <input type="number" name="bedrooms" class="form-control" value="0" required />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Bathrooms</label>
+                            <input type="number" name="bathrooms" class="form-control" value="0" required />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Garages</label>
+                            <input type="number" name="garages" class="form-control" value="0" required />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Property Image</label>
+                        <input type="file" name="image" accept="image/*" class="form-control" onchange="previewImage(event)" />
+                        <img id="imagePreview" src="#" alt="Preview" class="mt-3 rounded d-none" style="width:100%; height:200px; object-fit:cover;" />
+                    </div>
+                    <button type="button" id="savePropertyBtn" class="btn btn-primary w-100">Save Property</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById("savePropertyBtn").addEventListener("click", async function () {
+            const form = document.getElementById("addPropertyForm");
+            const formData = new FormData(form);
+
+            formData.append("title", form.elements.namedItem("title").value);
+            formData.append("location", form.elements.namedItem("location").value);
+            formData.append("price", form.elements.namedItem("price").value);
+            formData.append("leaseDuration", form.elements.namedItem("leaseDuration").value);
+            formData.append("bedrooms", parseInt(form.elements.namedItem("bedrooms").value));
+            formData.append("bathrooms", parseInt(form.elements.namedItem("bathrooms").value));
+            formData.append("garages", parseInt(form.elements.namedItem("garages").value));
+
+            const response = await fetch("/PropertyManager/AddProperty", {
+                method: "POST",
+                body: formData
+            });
+
+            const result = await response.json();
+            alert(result.message);
+            if (result.success) location.reload();
+        });
+
+        function previewImage(event) {
+            const preview = document.getElementById("imagePreview");
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = e => {
+                    preview.src = e.target.result;
+                    preview.classList.remove("d-none");
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        document.querySelectorAll('.hover-shadow').forEach(card => {
+            card.addEventListener('mouseenter', () => card.classList.add('shadow-lg'));
+            card.addEventListener('mouseleave', () => card.classList.remove('shadow-lg'));
+        });
+    </script>
+
+    <style>
+        .hover-shadow {
+            transition: all 0.2s ease-in-out;
+        }
+
+            .hover-shadow:hover {
+                transform: scale(1.03);
+            }
+    </style>
+}

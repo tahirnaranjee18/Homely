@@ -1,0 +1,73 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="row mb-4">
+    <div class="col-md-3 mb-3">
+        <div class="card p-3">
+            <h6>Total Users</h6>
+            <h3>@ViewBag.TotalUsers</h3>
+            <small class="text-success">↑ 12% from last month</small>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card p-3">
+            <h6>Pending Actions</h6>
+            <h3>@ViewBag.PendingActions</h3>
+            <small class="text-danger">↓ 5% from last week</small>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card p-3">
+            <h6>System Health</h6>
+            <h3>@ViewBag.SystemHealth%</h3>
+            <small class="text-success">All systems operational</small>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card p-3">
+            <h6>Active Sessions</h6>
+            <h3>@ViewBag.ActiveSessions</h3>
+            <small class="text-muted">No unusual activity</small>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Recent Activity</h5>
+        <a asp-controller="Admin" asp-action="ActivityLog" class="btn btn-sm btn-light">View All</a>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Action</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var activity in ViewBag.RecentActivities)
+                {
+                    <tr>
+                        <td>@activity.User</td>
+                        <td>@activity.Action</td>
+                        <td>@activity.Time</td>
+                        <td>
+                            <span class="badge bg-@(activity.Status == "Completed" ? "success" : "warning")">
+                                @activity.Status
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="alert alert-warning" role="alert">
+    <strong>Security Update Required:</strong> 3 users have outdated security protocols.
+</div>

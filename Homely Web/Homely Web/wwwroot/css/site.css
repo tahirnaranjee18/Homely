@@ -1,0 +1,405 @@
+﻿/* =========================================
+    1. THEME & COLOR VARIABLES
+========================================= */
+
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: #212529;
+    --card-bg: #FFFFFF;
+    --border-color: #dee2e6;
+    /* Headers & Footers (Pink) */
+    --header-bg: #F2DAF3;
+    --header-text: #7B4F28;
+    --footer-bg: #F2DAF3;
+    --footer-text: #7B4F28;
+    /* Buttons (Light Pink) */
+    --primary-color: #F2DAF3;
+    --primary-color-hover: #e8c4e9; /* A darker pink for hover */
+    --primary-text: #000000; /* Black Text */
+    /* Brown Button */
+    --brown-color: #7B4F28;
+    --brown-text: #FFFFFF;
+    /* Sidebar (Brown) */
+    --sidebar-bg: #7B4F28;
+    --sidebar-text: #FFFFFF;
+    --sidebar-link: #FFFFFF;
+    --sidebar-hover: #9a6d44;
+    --sidebar-active: #c08a5f;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1e293b;
+    --text-color: #f1f5f9;
+    --card-bg: #334155;
+    --border-color: #475569;
+    /* Dark Headers & Sidebars */
+    --header-bg: #0b1120;
+    --header-text: #f1f5f9;
+    --footer-bg: #0b1120;
+    --footer-text: #94a3b8;
+    --sidebar-bg: #0b1120;
+    --sidebar-text: #f1f5f9;
+    --sidebar-link: #94a3b8;
+    --sidebar-hover: #2a3a50;
+    --sidebar-active: #475569;
+    /* Buttons (Light Pink) */
+    --primary-color: #F2DAF3;
+    --primary-color-hover: #e8c4e9;
+    --primary-text: #000000;
+}
+
+/* =========================================
+    2. GLOBAL STYLES (STICKY FOOTER FIX)
+========================================= */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-on-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card-hover {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+.table {
+    color: var(--text-color) !important;
+}
+
+.form-control, .form-select {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+    background-color: #475569;
+    color: var(--text-color);
+    border-color: #5a6a82;
+}
+
+/* =========================================
+    3. BUTTON STYLES (NEW THEME)
+========================================= */
+
+/* This is your new Light Purple button */
+.btn-primary, .btn-success {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-text) !important;
+    font-weight: 600;
+}
+
+    .btn-primary:hover, .btn-success:hover {
+        background-color: var(--primary-color-hover) !important;
+        border-color: var(--primary-color-hover) !important;
+        color: var(--primary-text) !important;
+    }
+
+/* This is your Brown button */
+.btn-brown {
+    background-color: var(--brown-color) !important;
+    border-color: var(--brown-color) !important;
+    color: var(--brown-text) !important;
+    font-weight: 600;
+}
+
+    .btn-brown:hover {
+        opacity: 0.8;
+        color: var(--brown-text) !important;
+    }
+
+/* White button with Brown text */
+.btn-outline-brown {
+    background-color: var(--homely-white) !important;
+    border: 2px solid var(--brown-color) !important;
+    color: var(--brown-color) !important;
+    font-weight: 600;
+}
+
+    .btn-outline-brown:hover {
+        background-color: var(--brown-color) !important;
+        border-color: var(--brown-color) !important;
+        color: var(--brown-text) !important;
+    }
+
+
+/* =========================================
+    4. ADMIN/MANAGER SIDEBAR LAYOUT
+========================================= */
+
+body.admin-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+    body.admin-layout main {
+        flex-grow: 1;
+    }
+
+.sidebar {
+    width: 240px;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding-top: 1.5rem;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+    .sidebar .sidebar-header {
+        color: var(--sidebar-text);
+    }
+
+    .sidebar a {
+        color: var(--sidebar-link);
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 6px;
+        margin: 3px 10px;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    .sidebar .nav-icon {
+        width: 24px;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+
+    .sidebar a:hover {
+        background-color: var(--sidebar-hover);
+        color: var(--sidebar-text);
+    }
+
+    .sidebar a.active {
+        background-color: var(--sidebar-active);
+        color: var(--sidebar-text);
+        font-weight: 600;
+    }
+
+[data-theme="dark"] .sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+}
+
+    [data-theme="dark"] .sidebar a {
+        color: var(--sidebar-link);
+    }
+
+        [data-theme="dark"] .sidebar a:hover {
+            background-color: var(--sidebar-hover);
+            color: var(--sidebar-text);
+        }
+
+        [data-theme="dark"] .sidebar a.active {
+            background-color: var(--sidebar-active);
+            color: var(--sidebar-text);
+        }
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    overflow-y: auto;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.theme-toggle {
+    border: none;
+    background: none;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+/* =========================================
+    5. PUBLIC/GUEST LAYOUT
+========================================= */
+
+.navbar-main-guest {
+    background-color: var(--header-bg) !important;
+    min-height: 70px;
+}
+
+    .navbar-main-guest .navbar-brand,
+    .navbar-main-guest .nav-link {
+        color: var(--header-text) !important;
+        font-weight: 600;
+    }
+
+    .navbar-main-guest .navbar-toggler-icon {
+        background-image: var(--bs-navbar-toggler-icon-bg, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%237B4F28' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"));
+    }
+
+    .navbar-main-guest .navbar-toggler {
+        border-color: var(--header-text) !important;
+        color: var(--header-text) !important;
+    }
+
+.footer-main-guest {
+    background-color: var(--footer-bg) !important;
+    color: var(--footer-text) !important;
+    padding: 1.5rem 0;
+    flex-shrink: 0;
+}
+
+    .footer-main-guest a {
+        color: var(--footer-text);
+    }
+
+.header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* High z-index to stay on top of other content */
+}
+
+.sub-header {
+    background-color: #F9F2FA;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1019;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+}
+
+header:hover .sub-header {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub-header a {
+    color: var(--header-text);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+    .sub-header a:hover {
+        background-color: var(--bg-color);
+    }
+
+/* =========================================
+    ✅ 6. FILTER LAYOUT
+========================================= */
+
+.filter-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-sidebar {
+    width: 280px; /* Set a fixed width for the filter sidebar */
+    flex-shrink: 0; /* Don't allow this column to shrink */
+    padding-right: 1.5rem;
+}
+
+    .filter-sidebar .card {
+
+    }
+
+.property-content {
+    flex-grow: 1; /* This column fills the remaining space */
+}
+
+/* On medium screens and smaller, stack the layout */
+@@media (max-width: 991.98px) {
+    .filter-layout {
+        flex-direction: column;
+    }
+
+    .filter-sidebar {
+        width: 100%;
+        padding-right: 0;
+    }
+
+        .filter-sidebar .card {
+            position: static; /* Un-stick the card on mobile */
+            margin-bottom: 1.5rem;
+        }
+}
+
+/* =========================================
+    7. MAINTENANCE BOARD STYLES
+========================================= */
+
+/* "washed-out" card backgrounds */
+.card-status-pending {
+    background-color: rgba(255, 152, 0, 0.1) !important;
+    border-left: 5px solid #FF9800 !important;
+}
+
+.card-status-progress {
+    background-color: rgba(3, 169, 244, 0.1) !important;
+    border-left: 5px solid #03A9F4 !important;
+}
+
+.card-status-resolved {
+    background-color: rgba(76, 175, 80, 0.1) !important;
+    border-left: 5px solid #4CAF50 !important;
+}
+
+[data-theme="dark"] .card-status-pending {
+    background-color: rgba(255, 152, 0, 0.2) !important;
+}
+
+[data-theme="dark"] .card-status-progress {
+    background-color: rgba(3, 169, 244, 0.2) !important;
+}
+
+[data-theme="dark"] .card-status-resolved {
+    background-color: rgba(76, 175, 80, 0.2) !important;
+}
+

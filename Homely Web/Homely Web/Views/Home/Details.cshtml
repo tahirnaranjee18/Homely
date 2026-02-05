@@ -1,0 +1,47 @@
+﻿@model Homely_Web.Models.PropertyModel
+@{
+    ViewData["Title"] = Model.Title;
+    Layout = "~/Views/Shared/_LayoutGuest.cshtml";
+}
+
+<div class="container my-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            @if (Model.ImageUrls != null && Model.ImageUrls.Any())
+            {
+                <img src="@Model.ImageUrls.First()" class="img-fluid w-100 mb-3" style="max-height: 400px; object-fit: cover; border-radius: 8px;" alt="@Model.Title">
+            }
+            else
+            {
+                <img src="@Model.ImageUrl" class="img-fluid w-100 mb-3" style="max-height: 400px; object-fit: cover; border-radius: 8px;" alt="@Model.Title">
+            }
+
+            <h2 class="fw-bold">@Model.Title</h2>
+            <h5 class="text-muted">@Model.Location</h5>
+            <h3 class="mt-2" style="color: #7B4F28;">R @Model.Price / month</h3>
+
+            <hr class="my-4">
+
+            <h4>Amenities</h4>
+            <div class="mb-3">
+                <p class="mb-2"><i class="fas fa-bed me-2 text-muted"></i> @Model.Bedrooms Bedrooms</p>
+                <p class="mb-2"><i class="fas fa-bath me-2 text-muted"></i> @Model.Bathrooms Bathrooms</p>
+                <p class="mb-2"><i class="fas fa-car me-2 text-muted"></i> @Model.Garages Garages</p>
+                <p class="mb-2"><i class="fas fa-file-contract me-2 text-muted"></i> @Model.LeaseDuration Month Lease</p>
+            </div>
+
+            <div class="row g-2 mt-4">
+                <div class="col-6 d-grid">
+                    <a asp-action="Contact" asp-controller="Home" asp-route-id="@Model.OwnerId" class="btn btn-primary btn-lg">
+                        Find Out More
+                    </a>
+                </div>
+                <div class="col-6 d-grid">
+                    <a asp-action="Apply" asp-controller="Home" asp-route-id="@Model.Id" class="btn btn-outline-brown btn-lg">
+                        Apply Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
